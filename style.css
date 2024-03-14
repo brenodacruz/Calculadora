@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes degrade{
+    0%{
+        background-position-x: 0%;
+        
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+body{
+    background:linear-gradient(to bottom left, rgb(65, 0, 0), red, rgb(65, 0, 0));
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 700% 100%;
+    animation: degrade 5s infinite alternate ;
+}
+
+#botoes{
+    margin-top: 300px;
+    font-size: 0;
+    padding: 10px;
+
+}
+
+.botao{
+    width: 110px;
+    height: 50px;
+    
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 1px;
+
+    font-weight: bold;
+    border: none;
+    
+}
+
+.botao:hover{
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    
+}
+
+#calculadora{
+   position: relative;
+
+    text-align: center;
+
+
+    background-color: #73757286;
+    width: 500px;
+    height: 700px;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    border: 1px solid red;
+}
+
+#resultado{
+
+    width: 224px;
+}
+
+#tela{
+    position: relative;
+    margin: auto;
+    background-color: #2b2b2b;
+    height: 200px;
+    width: 400px ;
+
+    margin-top: 90px;
+    margin-bottom: -190px;
+    border-radius: 5px;
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+
+}
+
+
+
+.dif{
+    background-color: rgba(255, 0, 0, 0.664);
+}
+
+#memoria{
+    position: absolute;
+    font-size: 16px;
+    top: 19px;
+    margin: auto;
+    
+    color: gray;
+    
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    
+}
+
+.op{
+    background-color: #DDA347;
+}
+
+#res{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}

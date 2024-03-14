@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="calculadora">
+
+        <div id="tela"><div id="memoria"></div><div id="res">0</div></div>
+
+        <div id="botoes">
+            <button type="button" class="botao op" onclick="por()">%</button>
+            <button type="button" class="botao op" onclick="ce ()">CE</button>
+            <button type="button" class="botao op" onclick="c()">C</button>
+            <button type="button" class="botao dif" onclick="apagar()">X</button>
+            <button type="button" class="botao" onclick="number7 ()" id="7">7</button>
+            <button type="button" class="botao" onclick="number8 ()" id="8">8</button>
+            <button type="button" class="botao" onclick="number9 ()" id="9">9</button>
+            <button type="button" class="botao op" onclick="div ()">/</button>
+            <button type="button" class="botao" onclick="number4 ()" id="4">4</button>
+            <button type="button" class="botao" onclick="number5 ()" id="5">5</button>
+            <button type="button" class="botao" onclick="number6 ()" id="6">6</button>
+            <button type="button" class="botao op" onclick="mult()" id="">X</button>
+            
+            <button type="button" class="botao" onclick="number1 ()" id="1">1</button>
+            <button type="button" class="botao" onclick="number2 ()" id="2">2</button>
+            <button type="button" class="botao" onclick="number3 ()" id="3">3</button>
+            <button type="button" class="botao op" onclick="sub ()" id="">-</button>
+            <button type="button" class="botao" onclick="number0 ()" id="0">0</button>
+            <button type="button" class="botao" id="resultado" onclick="resultado()">=</button>
+            <button type="button" class="botao op" onclick="soma()">+</button>
+        </div>
+    </div>
+    
+
+    
+
+    <script src="javascript.js"></script>
+</body>
+</html>
