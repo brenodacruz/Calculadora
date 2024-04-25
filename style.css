@@ -55,8 +55,10 @@ body{
 
 #calculadora{
    position: relative;
-
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
 
 
     background-color: #73757286;
@@ -125,4 +127,19 @@ body{
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis; 
+}
+
+@media screen and (max-width: 620px) {
+
+    #calculadora, #botoes, #tela{
+        width: 80%;
+    }
+    
+    .botao{
+        width: 20%;
+    }
+
+    #resultado{
+        width: calc(100% - 60%);
+    }
 }
